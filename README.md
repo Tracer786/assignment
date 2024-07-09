@@ -1,3 +1,6 @@
+# Working ScreenShot
+![Screenshot (882)](https://github.com/Tracer786/assignment/assets/113162644/4f30954a-0700-4edc-a761-17b5892f7d52)
+
 # Longest Path in a Weighted Directed Acyclic Graph (DAG)
 
 ## Instructions
