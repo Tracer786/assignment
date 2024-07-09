@@ -1,0 +1,18 @@
+1.      longest_path(graph: list) -> int:
+
+        This is the main function. It will first obtain the topological order using function `topological_sort(graph)` and then calculate the longest path using `calculate_longest_path(graph,topo_order)`.
+
+2.      get_topological_order(graph):
+
+        This function finds the topological order of the nodes in the graph.
+        It starts by setting the in-degree of each node and adds nodes with zero in-degree to a stack.
+        Nodes are then removed from the stack, added to the topological order, and their neighbors' in-degrees are updated.
+        If a neighbor's in-degree becomes zero, it is added to the stack.
+
+3.      compute_longest_path(graph, topo_order):
+
+        This function finds the longest path using the topological order from `topological_sort(graph)`.
+        It starts by creating a distance array with negative infinity for all nodes.
+        Then, it sets the distance for each node in the topological order.
+        For each node, it updates the distance to its neighbors if a longer path is found through the current node.
+        Finally, it returns the longest distance found.
